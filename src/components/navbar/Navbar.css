@@ -48,6 +48,7 @@
 /* Active nav item */
 .nav-item.active {
   background-color: #fff;
+  color: var(--color-orange);
 }
 
 @media screen and (max-width: 576px) {
