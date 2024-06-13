@@ -41,6 +41,8 @@
   border: 1px solid #ccc;
   background-color: var(--input-background-color);
   border-radius: 4px;
+  font-size: 18px;
+  font-family: var(--p);
 }
 
 .form-group input::placeholder,
