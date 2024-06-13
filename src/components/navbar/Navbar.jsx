@@ -1,14 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaHome, FaUser, FaFolderOpen, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
-  const [activeNavItem, setActiveNavItem] = useState("home");
+  const [activeNavItem, setActiveNavItem] = useState(
+    localStorage.getItem("activeNavItem") || "home"
+  );
 
   const handleNavItemClick = (navItem) => {
     setActiveNavItem(navItem);
+    localStorage.setItem("activeNavItem", navItem);
   };
+
+  useEffect(() => {
+    const savedNavItem = localStorage.getItem("activeNavItem");
+    if (savedNavItem) {
+      setActiveNavItem(savedNavItem);
+    }
+  }, []);
 
   return (
     <nav className="navbar">
