@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 import { FaHome, FaUser, FaFolderOpen, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
@@ -13,46 +14,46 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="navbar-nav">
         <li className={`nav-item ${activeNavItem === "home" ? "active" : ""}`}>
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="nav-link"
             onClick={() => handleNavItemClick("home")}
           >
             <FaHome className="nav-icon" />
-          </a>
+          </Link>
         </li>
         <li className={`nav-item ${activeNavItem === "about" ? "active" : ""}`}>
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className="nav-link"
             onClick={() => handleNavItemClick("about")}
           >
             <FaUser className="nav-icon" />
-          </a>
+          </Link>
         </li>
         <li
           className={`nav-item ${
             activeNavItem === "portfolio" ? "active" : ""
           }`}
         >
-          <a
-            href="#portfolio"
+          <Link
+            to="/portfolio"
             className="nav-link"
             onClick={() => handleNavItemClick("portfolio")}
           >
             <FaFolderOpen className="nav-icon" />
-          </a>
+          </Link>
         </li>
         <li
           className={`nav-item ${activeNavItem === "contact" ? "active" : ""}`}
         >
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="nav-link"
             onClick={() => handleNavItemClick("contact")}
           >
             <FaEnvelope className="nav-icon" />
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
