@@ -15,6 +15,7 @@
   justify-content: center;
   gap: 30px;
   margin: 2rem 30px;
+  padding-bottom: 2rem;
 }
 
 .project {
@@ -29,7 +30,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-height: 300px;
-  border: 2px solid rgb(175, 248, 248);
+  border: 2px solid #ccc;
 }
 
 .project-overlay {
