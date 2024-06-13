@@ -1,11 +1,11 @@
 import React from "react";
 import "./Portfolio.css";
-import portfolioImg1 from "../../assets/portfolio-img1.png";
-import portfolioImg2 from "../../assets/portfolio-img2.png";
-import portfolioImg3 from "../../assets/portfolio-img3.png";
-import portfolioImg4 from "../../assets/portfolio-img1.png";
-import portfolioImg5 from "../../assets/portfolio-img2.png";
-import portfolioImg6 from "../../assets/portfolio-img3.png";
+import portfolioImg1 from "../../assets/red.svg";
+import portfolioImg2 from "../../assets/blue.svg";
+import portfolioImg3 from "../../assets/green.svg";
+import portfolioImg4 from "../../assets/purple.svg";
+import portfolioImg5 from "../../assets/yellow.svg";
+import portfolioImg6 from "../../assets/teal.svg";
 
 const projectData = [
   {
