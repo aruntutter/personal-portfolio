@@ -1,1 +1,169 @@
 /* About.css */
+.about {
+  width: 1200px;
+  margin: 0rem auto;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+.about-left {
+  width: 50%;
+}
+
+.about-btn {
+  margin-top: 1.5rem;
+}
+
+/* Right */
+.about-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-right-h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.language-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.language-list li {
+  list-style: none;
+}
+
+.language-list .language {
+  width: 350px;
+  text-align: center;
+  padding: 10px 10px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+
+/* Scroll */
+.auto-scroll {
+  margin: 3rem 4rem 2rem;
+}
+
+.tech-h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.tech-stacks {
+  margin-top: 2rem;
+}
+
+.tech-stacks img {
+  width: 250px;
+  padding: 0 10px;
+}
+
+/* Experience */
+
+.experience {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.timeline-h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.timeline-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.company {
+  color: #555;
+}
+
+.period {
+  color: #888;
+  text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .period {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about {
+    width: 100%;
+  }
+
+  .about-left {
+    width: 95%;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    padding-top: 0;
+  }
+
+  .about-right-h3 {
+    margin-top: 2rem;
+  }
+
+  .language-list {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .language-list .language {
+    width: 300px;
+  }
+
+  .auto-scroll {
+    margin: 0 1rem 2rem;
+  }
+
+  .tech-images img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tech-stacks img {
+    width: 150px;
+    padding: 0 10px;
+  }
+}
