@@ -1,1 +1,107 @@
 /* Home.css */
+.home {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem auto;
+}
+
+.home-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home-left .home-p1 {
+  font-size: 1.5rem;
+}
+
+.home-left h1 {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 5rem;
+  font-weight: 500;
+  padding: 15px 0;
+}
+
+.home-left .home-p2 {
+  font-size: 22px;
+  color: var(--color-orange);
+}
+
+.role-des .home-p3 {
+  font-size: 16px;
+  color: var(--color-grey);
+  padding: 25px 0;
+  width: 600px;
+}
+
+/* Right */
+.home-right img {
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .home {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .home-left .home-p1 {
+    font-size: 1.4rem;
+  }
+
+  .home-left h1 {
+    font-size: 4rem;
+  }
+
+  .role-des .home-p3 {
+    width: 500px;
+  }
+
+  .home-right img {
+    width: 300px;
+    height: 300px;
+    padding: 0;
+  }
+
+}
+
+@media screen and (max-width: 828px) {
+  .home-left h1 {
+    font-size: 3.7rem;
+  }
+
+  .role-des .home-p3 {
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 710px) {
+  .home {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .role-des .home-p3 {
+    padding: 25px 0;
+    width: 100%;
+  }
+
+  .home-right {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 422px) {
+  .home-left h1 {
+    font-size: 3rem;
+  }
+}
