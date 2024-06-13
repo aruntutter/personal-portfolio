@@ -26,7 +26,7 @@ const Navbar = () => {
         <li className={`nav-item ${activeNavItem === "home" ? "active" : ""}`}>
           <Link
             to="/"
-            className="nav-link"
+            className={`nav-link ${activeNavItem === "home" ? "active" : ""}`}
             onClick={() => handleNavItemClick("home")}
           >
             <FaHome className="nav-icon" />
@@ -35,7 +35,7 @@ const Navbar = () => {
         <li className={`nav-item ${activeNavItem === "about" ? "active" : ""}`}>
           <Link
             to="/about"
-            className="nav-link"
+            className={`nav-link ${activeNavItem === "about" ? "active" : ""}`}
             onClick={() => handleNavItemClick("about")}
           >
             <FaUser className="nav-icon" />
@@ -48,7 +48,9 @@ const Navbar = () => {
         >
           <Link
             to="/portfolio"
-            className="nav-link"
+            className={`nav-link ${
+              activeNavItem === "portfolio" ? "active" : ""
+            }`}
             onClick={() => handleNavItemClick("portfolio")}
           >
             <FaFolderOpen className="nav-icon" />
@@ -59,7 +61,9 @@ const Navbar = () => {
         >
           <Link
             to="/contact"
-            className="nav-link"
+            className={`nav-link ${
+              activeNavItem === "contact" ? "active" : ""
+            }`}
             onClick={() => handleNavItemClick("contact")}
           >
             <FaEnvelope className="nav-icon" />

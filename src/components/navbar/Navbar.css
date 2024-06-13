@@ -48,6 +48,9 @@
 /* Active nav item */
 .nav-item.active {
   background-color: #fff;
+}
+
+.nav-link.active .nav-icon {
   color: var(--color-orange);
 }
 
