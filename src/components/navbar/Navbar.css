@@ -6,6 +6,7 @@
   transform: translate(-50%, -50%);
   padding: 10px 10px;
   border-radius: 50px;
+  z-index: 1000;
 }
 
 .navbar-nav {
