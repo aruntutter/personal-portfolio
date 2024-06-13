@@ -54,12 +54,9 @@ const Portfolio = () => {
     <section className="portfolio">
       <h2 className="h2">PORTFOLIO</h2>
       <p className="p">
-        Welcome to my portfolio! Here, you will find a showcase of my frontend
-        development projects, demonstrating my expertise in HTML, CSS,
-        JavaScript, React, and Firebase. Each project reflects my commitment to
-        creating dynamic, user-friendly, and responsive web applications.
-        Explore the highlights of my work and see how I bring ideas to life
-        through code.
+        Welcome to my portfolio! Explore my frontend projects showcasing
+        expertise in HTML, CSS, JavaScript, React, and Firebase. See how I
+        create dynamic, user-friendly, and responsive web applications.
       </p>
 
       <div className="list-of-projects">
