@@ -30,12 +30,12 @@
 
 .project img {
   max-width: 100%;
-  height: auto;
+  height: 200px;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-height: 300px;
-  border: 2px solid #ccc;
+  border-radius: 20px;
 }
 
 .project-overlay {
@@ -58,11 +58,11 @@
 }
 
 .project-link {
-  color: #fff;
+  color: var(--color-white);
   text-decoration: none;
   margin: 10px;
   padding: 8px 15px;
-  border: 2px solid #fff;
+  border: 1px solid var(--color-grey);
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
 }
@@ -91,6 +91,10 @@
   .project {
     flex: 0 0 calc(100% - 20px);
     margin-bottom: 0;
+  }
+
+  .project img {
+    height: 150px;
   }
 
   .project-link {

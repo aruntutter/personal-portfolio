@@ -71,7 +71,7 @@ const Portfolio = () => {
                 Source Code
               </a>
             </div>
-            <p className="project-name">{project.title}</p>
+            <p className="p project-name">{project.title}</p>
           </div>
         ))}
       </div>
