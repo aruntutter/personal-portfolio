@@ -17,12 +17,12 @@ html {
   font-size: 16px;
   font-family: var(--p);
   scroll-behavior: smooth;
-  cursor: none;
 }
 
 body {
   background-color: var(--color-black);
   color: var(--color-white);
+  cursor: none;
 }
 
 /* CSS root variables */
@@ -75,4 +75,17 @@ body {
 .btn button .icon-download {
   margin-left: 10px;
   font-size: 18px;
+}
+
+
+@media screen and (max-width: 576px) {
+
+  body {
+    cursor: auto;
+  }
+
+  /* Animated cursor */
+  .animated-cursor {
+    display: none;
+  }
 }

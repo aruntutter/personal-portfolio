@@ -101,6 +101,10 @@
 }
 
 @media screen and (max-width: 422px) {
+  .home-wrapper {
+    height: 80vh;
+  }
+
   .home-left h1 {
     font-size: 3rem;
   }

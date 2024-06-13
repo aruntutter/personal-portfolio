@@ -21,7 +21,7 @@ const App = () => {
       </div>
 
       {/* Animated Cursor */}
-      <div className="max-[1200px]:hidden">
+      <div className="max-[1200px]:hidden animated-cursor">
         <AnimatedCursor
           color="252, 69, 29"
           clickables={[
