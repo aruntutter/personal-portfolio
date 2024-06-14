@@ -74,27 +74,43 @@ const About = () => {
           <div className="timeline">
             <div className="title">Web Developer</div>
             <div className="company">Codsoft</div>
-            <div className="period">05-2024 - Present</div>
+            <div className="period">Jul-2024 - Present</div>
           </div>
           <div className="timeline">
             <div className="title">Web Developer</div>
-            <div className="company">Codsoft</div>
-            <div className="period">05-2024 - Present</div>
+            <div className="company">Oasis Infobyte</div>
+            <div className="period">Jun-2024 - Jul-2024</div>
           </div>
           <div className="timeline">
-            <div className="title">Web Developer</div>
-            <div className="company">Codsoft</div>
-            <div className="period">05-2024 - Present</div>
+            <div className="title">Frontend Developer</div>
+            <div className="company">Synexoo</div>
+            <div className="period">May-2024 - Jun-2024</div>
           </div>
-          <div className="timeline">
-            <div className="title">Web Developer</div>
-            <div className="company">Codsoft</div>
-            <div className="period">05-2024 - Present</div>
+        </div>
+      </div>
+      {/* Education */}
+      <div className="education">
+        <h3 className="education-h3">Education</h3>
+        <div className="education-wrapper">
+          {/* Skill Safari */}
+          <div className="education-timeline">
+            <div className="education-title">
+              Full Stack Web Development - MERN
+            </div>
+            <div className="education-company">Skill Safari</div>
+            <div className="education-period">Feb, 2023 - Mar, 2024</div>
           </div>
-          <div className="timeline">
-            <div className="title">Web Developer</div>
-            <div className="company">Codsoft</div>
-            <div className="period">05-2024 - Present</div>
+          {/* College */}
+          <div className="education-timeline">
+            <div className="education-title">B.A. Programme</div>
+            <div className="education-company">University of Delhi</div>
+            <div className="education-period">Jul, 2020 - Dec, 2023</div>
+          </div>
+          {/* School */}
+          <div className="education-timeline">
+            <div className="education-title">Higher Secondary</div>
+            <div className="education-company">DTEA Sr. Sec. School</div>
+            <div className="education-period">2019 - 2020</div>
           </div>
         </div>
       </div>

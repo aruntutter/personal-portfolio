@@ -47,13 +47,14 @@
   width: 350px;
   text-align: center;
   padding: 10px 10px;
-  border: 1px solid #fff;
+  border: 1px solid var(--color-grey);
+  color: var(--color-grey);
   border-radius: 50px;
 }
 
 /* Scroll */
 .auto-scroll {
-  margin: 3rem 4rem 2rem;
+  margin: 5rem 4rem 4rem;
 }
 
 .tech-h3 {
@@ -73,7 +74,6 @@
 }
 
 /* Experience */
-
 .experience {
   margin: 20px;
   padding: 20px;
@@ -92,7 +92,6 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
-  margin-bottom: 3rem;
   justify-content: center;
 }
 
@@ -110,7 +109,7 @@
 }
 
 .company {
-  color: #555;
+  color: var(--color-orange);
 }
 
 .period {
@@ -120,7 +119,67 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .experience {
+    margin: 0px;
+  }
+
   .period {
+    text-align: left;
+  }
+}
+
+/* Education */
+.education {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.education-h3 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.education-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 3rem;
+  justify-content: center;
+}
+
+.education-timeline {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.education-title {
+  font-weight: bold;
+}
+
+.education-company {
+  color: var(--color-orange);
+}
+
+.education-period {
+  color: #888;
+  text-align: right;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .education {
+    margin: 0px;
+  }
+
+  .education-period {
     text-align: left;
   }
 }
@@ -139,13 +198,13 @@
     padding-top: 0;
   }
 
-  .about-right-h3 {
-    margin-top: 2rem;
+  .about-right {
+    margin-top: 4rem;
   }
 
   .language-list {
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .language-list .language {
@@ -153,7 +212,7 @@
   }
 
   .auto-scroll {
-    margin: 0 1rem 2rem;
+    margin: 2rem 1rem 2rem;
   }
 
   .tech-images img {
