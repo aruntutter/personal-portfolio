@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   height: 100vh;
 }
 
@@ -44,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .home-right img {
