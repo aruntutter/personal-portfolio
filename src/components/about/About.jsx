@@ -28,10 +28,10 @@ const About = () => {
             As a dedicated and skilled Front-End Web Developer, I bring a strong
             proficiency in creating engaging and responsive web applications.
             <br />
-            <br />I am actively seeking exciting opportunities in the tech
-            industry. My commitment to continuous learning and exploring new
-            skills and technologies drives my dedication to staying at the
-            forefront of web development.
+            <br />
+            My commitment to continuous learning and exploring new skills and
+            technologies drives my dedication to staying at the forefront of web
+            development.
           </p>
           <div className="btn about-btn">
             <button onClick={handleDownload}>

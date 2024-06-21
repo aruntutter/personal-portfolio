@@ -29,15 +29,73 @@ const Home = () => {
   return (
     <section className="home">
       <div className="home-wrapper">
+        {/* Mobile View */}
+        <div className="mobile-view">
+          <div className={`circle ${isHovered ? "paused" : ""}`}>
+            <a
+              href="https://www.linkedin.com/in/arunkumarr-/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              style={{ "--i": 1 }}
+            >
+              <FaLinkedin className="icon" />
+            </a>
+            <a
+              href="https://github.com/aruntutter"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              style={{ "--i": 2 }}
+            >
+              <FaGithub className="icon" />
+            </a>
+            <a
+              href="https://twitter.com/ByteOops"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              style={{ "--i": 3 }}
+            >
+              <FaTwitter className="icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/arun_tutter/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              style={{ "--i": 4 }}
+            >
+              <FaInstagram className="icon" />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100012953448827"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              style={{ "--i": 5 }}
+            >
+              <FaFacebook className="icon" />
+            </a>
+          </div>
+          <img src={ImageHome} alt="man standing with laptop" />
+        </div>
         <div className="home-left">
           <p className="home-p1">Hey there,</p>
-          <h1>
+          <h1 className="content">
             I'm Arun
             <br />
-            Kumar R
+            <span>Kumar R</span>
           </h1>
           <div className="role-title">
-            <p className="home-p2">-- Frontend Developer</p>
+            <p className="home-p2">
+              <span>&lt;/&gt;</span> Frontend Developer
+            </p>
           </div>
           <div className="role-des">
             <p className="home-p3">
