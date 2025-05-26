@@ -13,7 +13,7 @@ import ImageHome from "../../assets/home-img.jpg";
 const Home = () => {
   const handleDownload = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1y_sR7Fw1exg-7-Fhav6rucgeDS77xaVI/view?usp=sharing";
+      "https://drive.google.com/file/d/1TWcTknS-CSRTp3dCnA6Gvs7WQOFaxrlF/view?usp=drive_link";
   };
 
   const [isHovered, setIsHovered] = useState(false);
