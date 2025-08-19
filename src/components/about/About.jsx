@@ -16,7 +16,7 @@ import TechImg10 from "../../assets/tech-icons/tech-github.png";
 const About = () => {
   const handleDownload = () => {
     window.location.href =
-      "https://drive.google.com/file/d/1y_sR7Fw1exg-7-Fhav6rucgeDS77xaVI/view?usp=sharing";
+      "https://drive.google.com/file/d/1v3zBLnpbCHJxs2SV1qYlXxqj7ITBhVKi/view?usp=sharing";
   };
 
   return (
@@ -45,7 +45,7 @@ const About = () => {
             <li className="language">English</li>
             <li className="language">Tamil</li>
             <li className="language">Hindi</li>
-            <li className="language">Currently pursuing Japanese - JLPT N5</li>
+            <li className="language">Japanese / JLPT N5</li>
           </ul>
         </div>
       </div>
@@ -72,19 +72,19 @@ const About = () => {
         <h3 className="timeline-h3">Timeline</h3>
         <div className="timeline-wrapper">
           <div className="timeline">
-            <div className="title">Web Developer</div>
-            <div className="company">Codsoft</div>
-            <div className="period">Jul-2024 - Present</div>
+            <div className="title">Operations Coordinator</div>
+            <div className="company">Spinny</div>
+            <div className="period">Aug,2024 - Apr,2025</div>
           </div>
           <div className="timeline">
             <div className="title">Web Developer</div>
             <div className="company">Oasis Infobyte</div>
-            <div className="period">Jun-2024 - Jul-2024</div>
+            <div className="period">Jun,2024 - Jul,2024</div>
           </div>
           <div className="timeline">
             <div className="title">Frontend Developer</div>
             <div className="company">Synexoo</div>
-            <div className="period">May-2024 - Jun-2024</div>
+            <div className="period">May,2024 - Jun,2024</div>
           </div>
         </div>
       </div>
