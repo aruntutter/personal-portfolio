@@ -100,7 +100,7 @@ const Home = () => {
           <div className="role-des">
             <p className="home-p3">
               Front-End Web Developer | Actively Advancing Skills in Modern Web
-              Technologies | Pursuing Japanese - JLPT N5
+              Technologies.
             </p>
           </div>
           <div className="btn">
