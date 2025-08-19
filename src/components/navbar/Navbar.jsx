@@ -1,24 +1,32 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaHome, FaUser, FaFolderOpen, FaEnvelope } from "react-icons/fa";
 
 const Navbar = () => {
+  const location = useLocation();
+
   const [activeNavItem, setActiveNavItem] = useState(
     sessionStorage.getItem("activeNavItem") || "home"
   );
+
+  useEffect(() => {
+    const pathToNav = {
+      "/": "home",
+      "/about": "about",
+      "/portfolio": "portfolio",
+      "/contact": "contact",
+    };
+
+    const currentNav = pathToNav[location.pathname] || "home";
+    setActiveNavItem(currentNav);
+    sessionStorage.setItem("activeNavItem", currentNav);
+  }, [location]);
 
   const handleNavItemClick = (navItem) => {
     setActiveNavItem(navItem);
     sessionStorage.setItem("activeNavItem", navItem);
   };
-
-  useEffect(() => {
-    const savedNavItem = sessionStorage.getItem("activeNavItem");
-    if (savedNavItem) {
-      setActiveNavItem(savedNavItem);
-    }
-  }, []);
 
   return (
     <nav className="navbar">
