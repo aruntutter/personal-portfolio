@@ -89,18 +89,15 @@ img {
 }
 
 /* RESPONSIVE */
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 576px) {
   body {
     cursor: auto;
   }
 
   .animated-cursor {
     display: none;
-    cursor: auto;
   }
-} */
 
-@media screen and (max-width: 576px) {
   .btn button {
     width: 100%;
     max-width: 300px;
