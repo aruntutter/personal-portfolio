@@ -202,10 +202,6 @@
 }
 
 @media (max-width: 480px) {
-  .portfolio {
-    padding: 1rem;
-  }
-
   .portfolio-h2 {
     font-size: 1.4rem;
   }
