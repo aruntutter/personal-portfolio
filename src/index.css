@@ -1,3 +1,5 @@
+/* index.css */
+/* RESET & BASE */
 *,
 *::after,
 *::before {
@@ -5,77 +7,100 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  user-select: none;
 }
 
-/* CSS root variables */
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-orange: #FC451D;
-  --color-grey: #B7B7B7;
+  --color-orange: #fc451d;
+  --color-grey: #b7b7b7;
 
-  --icon-background-color: #454E56;
-  --input-background-color: #F8F8F8;
+  --icon-background-color: #454e56;
+  --input-background-color: #f8f8f8;
 
   --font-primary: "GeistSans", "GeistSans Fallback", sans-serif;
 }
 
 html {
   font-size: 16px;
-  font-family: var(--p);
+  font-family: var(--font-primary);
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #0f0f0f;
-  background-image:
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
-  background-size: 45px 45px, 45px 45px, 90px 90px;
-  background-position: top left, top left, center;
-  background-attachment: fixed;
   font-family: var(--font-primary);
+  background: #000000;
+  background-image:
+    radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.01) 2%, transparent 0%),
+    radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.01) 2%, transparent 0%);
+  background-size: 100px 100px;
   color: var(--color-white);
   cursor: none;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
-/* Base styles */
+.animated-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+/* GLOBAL UTILITIES */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Buttons (default) */
 .btn button {
   align-self: flex-end;
   padding: 0.8rem 1.8rem;
-  border: none;
-  background: var(--color-orange, #ff7f50);
+  background: var(--color-orange);
   color: #fff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid var(--color-orange);
+  transition: background 0.35s ease, color 0.35s ease, border 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .btn button:hover {
-  background-color: transparent;
-  border: 1px solid var(--color-orange, #ff7f50);
+  background: transparent;
+  color: var(--color-orange);
+  box-shadow: 0 4px 12px rgba(255, 127, 80, 0.3);
 }
 
-.btn button .icon-download {
-  margin-left: 10px;
-  font-size: 18px;
-}
-
-
-@media screen and (max-width: 576px) {
-
+/* RESPONSIVE */
+/* @media screen and (max-width: 1200px) {
   body {
     cursor: auto;
   }
 
   .animated-cursor {
     display: none;
+    cursor: auto;
   }
+} */
 
+@media screen and (max-width: 576px) {
   .btn button {
     width: 100%;
     max-width: 300px;

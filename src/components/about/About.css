@@ -4,8 +4,16 @@
   margin: 1.5rem auto 3rem auto;
   padding: 2rem;
   border-radius: 12px;
-  background: var(--color-bg, #1a1a1a);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #0a0a0a;
+  background-image:
+    radial-gradient(circle at 20px 20px, rgba(255, 255, 255, 0.015) 2%, transparent 0%),
+    radial-gradient(circle at 60px 60px, rgba(255, 255, 255, 0.015) 2%, transparent 0%);
+  background-size: 80px 80px;
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.45),
+    0 12px 50px rgba(0, 0, 0, 0.25);
 }
 
 .about-h2 {
@@ -40,9 +48,9 @@
 
 .skills-h3 {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 1.2rem;
-  color: var(--color-orange, #ff7f50);
+  color: var(--color-orange, #ff7f70);
 }
 
 .skills-list {
@@ -66,76 +74,102 @@
 }
 
 .skill:hover {
-  background: var(--color-orange, #ff7f50);
+  background: var(--color-orange, #ff7f70);
   transform: scale(1.05);
 }
 
 /* Timeline Section */
 .experience {
   margin: 2rem 0;
-  padding: 1.5rem;
-  border-radius: 10px;
+  padding: 2rem;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.03);
+  position: relative;
 }
 
 .timeline-h3 {
   text-align: center;
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
-  color: var(--color-orange, #ff7f50);
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: var(--color-orange, #ff7f70);
+  position: relative;
 }
 
 .timeline-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  padding-left: 23px;
+  border-left: 2px solid rgba(255, 127, 80, 0.2);
 }
 
+/* Timeline Item */
 .timeline {
-  padding: 1rem;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 127, 80, 0.2);
-  background: rgba(255, 127, 80, 0.05);
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 127, 80, 0.06);
+  border: 1px solid rgba(255, 127, 80, 0.25);
+  position: relative;
   transition: all 0.3s ease;
 }
 
 .timeline:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(255, 127, 80, 0.15);
+  transform: translateX(6px);
+  box-shadow: 0 6px 18px rgba(255, 127, 80, 0.2);
+}
+
+/* Circle indicator on the line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 1.2rem;
+  width: 14px;
+  height: 14px;
+  background: var(--color-orange, #ff7f50);
+  border-radius: 50%;
+  border: 2px solid #222;
+  box-shadow: 0 0 8px rgba(255, 127, 80, 0.6);
 }
 
 .title {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+  color: #fff;
 }
 
 .company {
   color: var(--color-orange, #ff7f50);
   font-weight: 500;
-  margin: 10px 0;
+  margin-bottom: 0.3rem;
 }
 
 .company .job-type {
   color: #aaa;
   font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .period {
   font-size: 0.9rem;
-  color: #aaa;
-  text-align: right;
+  color: #bbb;
+  font-style: italic;
+  margin-bottom: 0.8rem;
 }
 
 .timeline-details {
-  margin-top: 0.5rem;
-  padding-left: 1rem;
+  margin: 0;
+  padding-left: 1.2rem;
   list-style: disc;
   font-size: 0.9rem;
   color: var(--color-grey, #dcdcdc);
+  line-height: 1.5;
 }
 
 .timeline-details li {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.4rem;
 }
 
 /* Languages Section */
@@ -148,9 +182,9 @@
 
 .language-h3 {
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   margin-bottom: 1.2rem;
-  color: var(--color-orange, #ff7f50);
+  color: var(--color-orange, #ff7f70);
 }
 
 .language-list {
@@ -162,6 +196,7 @@
 }
 
 .language {
+  position: relative;
   list-style: none;
   padding: 10px 20px;
   border-radius: 30px;
@@ -172,11 +207,39 @@
   text-align: center;
   font-weight: 500;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
-.language:hover {
-  background: var(--color-orange, #ff7f50);
-  transform: scale(1.05);
+/* Overlay text */
+.language::after {
+  content: attr(data-level);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-orange, #ff7f70);
+  color: #dcdcdc;
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  border-radius: 30px;
+}
+
+.language:hover::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.language span {
+  display: inline-block;
+  transition: opacity 0.35s ease;
+}
+
+.language:hover span {
+  opacity: 0;
 }
 
 /* Responsive */
@@ -211,5 +274,16 @@
 
   .language {
     width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-p {
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 }

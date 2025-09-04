@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import AnimatedCursor from "react-animated-cursor";
 import Navbar from "./components/navbar/Navbar";
@@ -21,7 +20,7 @@ const App = () => {
       </div>
 
       {/* Animated Cursor */}
-      <div className="max-[1200px]:hidden animated-cursor">
+      <div className="animated-cursor">
         <AnimatedCursor
           color="252, 69, 29"
           clickables={[

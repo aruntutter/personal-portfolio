@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./Home.css";
-import { FaDownload } from "react-icons/fa";
 import {
   FaLinkedin,
   FaGithub,
@@ -12,8 +11,9 @@ import ImageHome from "../../assets/home-img.jpg";
 
 const Home = () => {
   const handleDownload = () => {
-    window.location.href =
-      "https://drive.google.com/file/d/1v3zBLnpbCHJxs2SV1qYlXxqj7ITBhVKi/view?usp=sharing";
+    window.open(
+      "https://drive.google.com/file/d/1pF-_9aoiHy4T0DcHpnB8bebW18uHuj_R/view?usp=sharing"
+    );
   };
 
   const [isHovered, setIsHovered] = useState(false);
@@ -84,8 +84,7 @@ const Home = () => {
           <div className="home-top top-text">
             <p className="home-p1">Hey there,</p>
             <h1 className="content">
-              I'm Arun {/* <br /> */}
-              <span>Kumar R</span>
+              I'm Arun <span>Kumar R</span>
             </h1>
           </div>
 
@@ -110,9 +109,7 @@ const Home = () => {
           {/* Bottom Section */}
           <div className="home-bottom">
             <div className="btn">
-              <button onClick={handleDownload}>
-                Resume <FaDownload className="icon-download" />
-              </button>
+              <button onClick={handleDownload}>Resume</button>
             </div>
           </div>
         </div>
